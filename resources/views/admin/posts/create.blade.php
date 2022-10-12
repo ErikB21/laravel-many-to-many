@@ -31,7 +31,7 @@
                 <div class="mb-3 d-flex align-items-center justify-content-start flex-wrap">
                     @forelse ($tags as $tag)
                         <div id="tags" class="form-group form-check pr-2">
-                            <input class="form-check-input" type="checkbox" name="tags[]" id="tag_{{$tag->id}}" value="{{$tag->id}}">
+                            <input {{(in_array($tag->id, old('tags', [])))?'checked':''}} class="form-check-input" type="checkbox" name="tags[]" id="tag_{{$tag->id}}" value="{{$tag->id}}">
                             <label class="form-check-label" for="tag_{{$tag->id}}">{{$tag->name}}</label>
                         </div>
                     @empty
