@@ -34,6 +34,7 @@
                     <th scope="col">Title</th>
                     <th scope="col">Slug</th>
                     <th scope="col">Category</th>
+                    <th scope="col">Tag</th>
                     <th scope="col">Details</th>
                 </tr>
             </thead>
@@ -44,6 +45,9 @@
                         <td>{{$post->title}}</td>
                         <td>{{$post->slug}}</td>
                         <td>{{($post->category)?$post->category->name:'null'}}</td>
+                        @foreach ($post->tags as $tag)
+                            <td>{{$tag->name}}</td>
+                        @endforeach
                         <td>
                             <a class="btn btn-primary" href="{{route('admin.posts.show', ['post' => $post])}}">Dettagli</a>
                         </td>

@@ -22,7 +22,13 @@
             <ul class="list-unstyled pt-5 d-flex justify-content-center  flex-column">
                 <li class="text-secondary py-1"><strong class="text-white">Title:</strong> {{$post->title}}</li>
                 <li class="py-1 text-secondary"><strong class="text-white">Slug:</strong> {{$post->slug}}</li>
+                <li class="py-1 text-secondary"><strong class="text-white">Tag:</strong> 
+                    @foreach ($post->tags as $tag)
+                        {{$tag->name}}
+                    @endforeach
+                </li> 
                 <li class="py-1 text-secondary"><strong class="text-white">Description:</strong> {{$post->description}}</li>
+                
                 <li class="d-flex py-3 ">
                     <a class="btn btn-warning mx-2" href="{{route('admin.posts.edit', ['post' => $post])}}">Edit</a>
                     <form action="{{route('admin.posts.destroy', ['post' => $post])}}" onsubmit="return confirm('Sei sicuro di voler cancellare questo post?')" method="post">
