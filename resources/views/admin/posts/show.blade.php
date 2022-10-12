@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Dettaglio Post')
+@section('title', 'Post\'s Detail')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/show.css')}}">
@@ -17,7 +17,7 @@
             </div>
         @endif
 
-        <h1 class="border-bottom">Dettagli Post {{$post->id}}</h1>
+        <h1 class="border-bottom">Post Details {{$post->id}}</h1>
         <div class="square p-3 bg-dark d-flex justify-content-center align-items-center flex-column">
             <ul class="list-unstyled pt-5 d-flex justify-content-center  flex-column">
                 <li class="text-secondary py-1"><strong class="text-white">Title:</strong> {{$post->title}}</li>

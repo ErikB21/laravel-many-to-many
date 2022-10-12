@@ -25,7 +25,7 @@
 
         <div class="d-flex justify-content-between align-items-center px-2 my_title">
             <h1 class="text-center py-3">Category</h1>
-            <a class="btn btn-dark" href="{{route('admin.categories.create')}}"><i class="fa-solid fa-circle-plus pr-2 text-primary"></i>Nuova Categoria</a>
+            <a class="btn btn-dark" href="{{route('admin.categories.create')}}"><i class="fa-solid fa-circle-plus pr-2 text-primary"></i>New Category</a>
         </div>
         <table class="table m-auto table-dark pb-5">
             <thead class="">
@@ -43,7 +43,7 @@
                         <td>{{$category->name}}</td>
                         <td>{{$category->slug}}</td>
                         <td>
-                            <a class="btn btn-primary" href="{{route('admin.categories.show', ['category' => $category])}}">Dettagli</a>
+                            <a class="btn btn-primary" href="{{route('admin.categories.show', ['category' => $category])}}">Details</a>
                         </td>
                     </tr>
                 @empty
