@@ -13,7 +13,7 @@ class TagSeeder extends Seeder
      */
     public function run()
     {
-        $tags = ['calcio','basket','formula 1','film internazionali','cronaca nera', 'politica', 'abiti da sera', 'prova costume', 'Videogiochi', 'Console', 'Serie Tv', 'Film', 'personaggi famosi'];
+        $tags = ['Calcio','Basket','Formula 1','Cronaca nera', 'Politica', 'Moda', 'Profumi', 'Videogiochi', 'Console', 'Serie Tv', 'Film', 'Vip'];
 
         foreach ($tags as $tag) {
             $newTags = new Tag();
