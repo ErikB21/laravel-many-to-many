@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Modifica il post')
+@section('title', 'Edit the Post')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/edit.css')}}">
@@ -18,7 +18,7 @@
                 <div class="form-group mb-3">
                     <label for="category_id">Category</label>
                     <select id="category_id" name="category_id" class="form-control @error('category_id') is-invalid @enderror">
-                        <option {{(old('category_id')=="")?'selected':''}} value="">Scegli Categoria</option>
+                        <option {{(old('category_id')=="")?'selected':''}} value="">Choose Category</option>
                         @foreach ($categories as $category)
                             <option {{(old('category_id', $post->category_id)==$category->id)?'selected':''}} value="{{$category->id}}">{{$category->name}}</option>
                         @endforeach

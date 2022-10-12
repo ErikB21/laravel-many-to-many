@@ -9,10 +9,10 @@
 @section('content')
 
     <div class="container-fluid my_height px-0 d-flex flex-column justify-content-center align-items-center text-center">
-        <h1 class="">Benvenuto {{Auth::user()->name}}</h1>
-        <h3 class="">La tua area Amministrativa</h3>
-        <a class="text-decoration-none text-dark" href="{{route('admin.posts.index')}}"><i class="fa-solid fa-signs-post"></i> Vedi i tuoi post</a>
-        <a class="text-decoration-none text-dark" href="{{route('admin.categories.index')}}"><i class="fa-solid fa-paper-plane"></i> Vedi le tue categorie</a>
+        <h1 class="">Welcome {{Auth::user()->name}}</h1>
+        <h3 class="">Your Administrative Area</h3>
+        <a class="text-decoration-none text-dark" href="{{route('admin.posts.index')}}"><i class="fa-solid fa-signs-post"></i> See your posts</a>
+        <a class="text-decoration-none text-dark" href="{{route('admin.categories.index')}}"><i class="fa-solid fa-paper-plane"></i> See your categories</a>
     </div>
 
 @endsection

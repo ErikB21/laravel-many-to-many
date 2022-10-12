@@ -49736,13 +49736,13 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\index.scss */"./resources/sass/index.scss");
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\edit.scss */"./resources/sass/edit.scss");
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\show.scss */"./resources/sass/show.scss");
-__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\home.scss */"./resources/sass/home.scss");
-module.exports = __webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-one-to-many\resources\sass\create.scss */"./resources/sass/create.scss");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\edit.scss */"./resources/sass/edit.scss");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\show.scss */"./resources/sass/show.scss");
+__webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\home.scss */"./resources/sass/home.scss");
+module.exports = __webpack_require__(/*! C:\Users\erikb\Desktop\Boolean_Erik\VISUALCODE_LARAVEL\laravel-many-to-many\resources\sass\create.scss */"./resources/sass/create.scss");
 
 
 /***/ })

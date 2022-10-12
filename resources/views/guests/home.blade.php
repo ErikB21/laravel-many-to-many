@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css') }}">
 </head>
 <body>
-    <a href="{{route('admin.home')}}">Area amministrazione</a>
+    <a href="{{route('admin.home')}}">Administration area</a>
 
     <div id="root">
     </div>

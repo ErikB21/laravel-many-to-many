@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap);@charset "UTF-8";
 
 .my_bg {
   background-image: url("https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg?w=2000");
@@ -11008,16 +11008,20 @@ a.text-dark:focus {
   }
 }
 
-nav {
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+body nav {
   height: 10vh;
 }
 
-main {
+body main {
   height: 80vh;
   overflow-y: auto;
 }
 
-footer {
+body footer {
   height: 10vh;
 }
 

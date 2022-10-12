@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
 // Variables
 @import 'variables';
@@ -13,16 +14,18 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
-nav{
-    height: 10vh;
-}
-
-main{
-    height: 80vh;
-    overflow-y: auto;
-}
-
-footer{
-    height: 10vh;
+body{
+    font-family: $font-family-inconsolata;
+    nav{
+        height: 10vh;
+    }
+    
+    main{
+        height: 80vh;
+        overflow-y: auto;
+    }
+    
+    footer{
+        height: 10vh;
+    }
 }

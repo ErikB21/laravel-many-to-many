@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Crea un post')
+@section('title', 'Create a Post')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/create.css')}}">
@@ -17,7 +17,7 @@
                 <div class="form-group mb-3">
                     <label for="category_id">Category</label>
                     <select id="category_id" name="category_id" class="form-control @error('category_id') is-invalid @enderror">
-                        <option value="">Scegli Categoria</option>
+                        <option value="">Choose Category</option>
                         @foreach ($categories as $category)
                             <option {{(old('category_id')==$category->id)?'selected':''}} value="{{$category->id}}">{{$category->name}}</option>
                         @endforeach
@@ -35,7 +35,7 @@
                             <label class="form-check-label" for="tag_{{$tag->id}}">{{$tag->name}}</label>
                         </div>
                     @empty
-                        <div>Nessun Tag Trovato!</div>
+                        <div>No Tags Found!</div>
                     @endforelse
                     @error('tags')
                         <div class="invalid-feedback">{{$message}}</div>

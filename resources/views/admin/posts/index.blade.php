@@ -54,7 +54,7 @@
                     </tr>
                 @empty
                     <tr>
-                        <th>Nessun risultato trovato!</th>
+                        <th>No results found!</th>
                     </tr>
                 @endforelse
             </tbody>

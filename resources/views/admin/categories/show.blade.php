@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Category\'s Details')
+@section('title', 'Category Details')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/show.css')}}">
@@ -17,7 +17,7 @@
             </div>
         @endif
 
-        <h1 class="border-bottom">Category's Details: {{$category->name}}</h1>
+        <h1 class="border-bottom">Category Detail: {{$category->name}}</h1>
         <div class="square p-3 bg-dark d-flex justify-content-center align-items-center flex-column">
             <ul class="list-unstyled pt-5 d-flex justify-content-center  flex-column">
                 <li class="text-secondary py-1"><h4 class="text-white">Title: {{$category->name}}</h4></li>
@@ -39,7 +39,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <th>Nessun risultato trovato!</th>
+                            <th>Not result found!</th>
                         </tr>
                     @endforelse
                 </tbody>

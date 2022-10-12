@@ -44,10 +44,10 @@
                             <a href="{{route('admin.home')}}" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('admin.posts.index')}}" class="nav-link"><i class="fa-solid fa-signs-post"></i> Gestione Post</a>
+                            <a href="{{route('admin.posts.index')}}" class="nav-link"><i class="fa-solid fa-signs-post"></i> Post Management</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('admin.categories.index')}}" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Categorie</a>
+                            <a href="{{route('admin.categories.index')}}" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Categories</a>
                         </li>
                         
                     </ul>
