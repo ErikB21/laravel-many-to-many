@@ -1,0 +1,15 @@
+.my_width_form {
+  width: 100vw;
+  background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_23-2149001605.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  height: 80vh;
+}
+
+.my_width_form .sec_bg {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+}
+

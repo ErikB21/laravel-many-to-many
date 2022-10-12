@@ -1,0 +1,12 @@
+.my_height {
+  height: 100%;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149005675.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.my_height h1 {
+  font-size: 5rem;
+}
+

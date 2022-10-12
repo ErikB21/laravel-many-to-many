@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+//import scss views
+@import 'index';
+@import 'create';
+@import 'show';
+@import 'edit';
+@import 'home';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+nav{
+    height: 10vh;
+}
+
+main{
+    height: 80vh;
+    overflow-y: auto;
+}
+
+footer{
+    height: 10vh;
+}
