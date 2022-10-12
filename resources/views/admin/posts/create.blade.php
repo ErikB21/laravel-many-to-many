@@ -26,6 +26,21 @@
                         <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
+
+                <label for="tags">Tag</label>
+                <div class="mb-3 d-flex align-items-center justify-content-start flex-wrap">
+                    @forelse ($tags as $tag)
+                        <div id="tags" class="form-group form-check pr-2">
+                            <input class="form-check-input" type="checkbox" name="tags[]" id="tag_{{$tag->id}}" value="{{$tag->id}}">
+                            <label class="form-check-label" for="tag_{{$tag->id}}">{{$tag->name}}</label>
+                        </div>
+                    @empty
+                        <div>Nessun Tag Trovato!</div>
+                    @endforelse
+                    @error('tags')
+                        <div class="invalid-feedback">{{$message}}</div>
+                    @enderror
+                </div>
                 
                 
 
