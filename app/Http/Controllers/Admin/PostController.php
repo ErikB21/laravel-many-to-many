@@ -45,7 +45,8 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|min:4|max:255',
             'description' => 'required|max:65535',
-            'category_id' => 'nullable|exists:categories,id'
+            'category_id' => 'nullable|exists:categories,id',
+            'tags' => 'exists:tags,id'
         ]
     );
 
@@ -58,6 +59,11 @@ class PostController extends Controller
         $newPost->slug = $slug;
 
         $newPost->save();
+
+        if(array_key_exists('tags', $data)){//se non selezioniamo nessuna check, il post viene salvato allo stesso modo senza dare errore
+            $newPost->tags()->sync($data['tags']);
+        }
+
         return redirect()->route('admin.posts.index')->with('success', 'Hai creato un post correttamente');
     }
 
