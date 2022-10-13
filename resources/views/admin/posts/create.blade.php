@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <div class="container-fluid px-0 my_width_form pt-3">
+    <div class="container-fluid px-0 my_width_form">
         <div class="sec_bg">
             <form action="{{route('admin.posts.store')}}" method="POST">
 
