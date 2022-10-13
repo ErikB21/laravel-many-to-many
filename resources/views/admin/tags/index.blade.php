@@ -42,7 +42,7 @@
                         <td>{{$tag->name}}</td>
                         <td>{{$tag->slug}}</td>
                         <td>
-                            <a class="btn btn-primary" href="{{route('admin.tags.show', ['tag' => $tag])}}">Details</a>
+                            <a class="btn btn-primary" href="{{route('admin.tags.show', ['tag' => $tag->id])}}">Details</a>
                         </td>
                     </tr>
                 @empty

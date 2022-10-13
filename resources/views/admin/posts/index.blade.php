@@ -45,9 +45,11 @@
                         <td>{{$post->title}}</td>
                         <td>{{$post->slug}}</td>
                         <td>{{($post->category)?$post->category->name:'null'}}</td>
-                        @foreach ($post->tags as $tag)
-                            <td>{{$tag->name}}</td>
-                        @endforeach
+                        <td>
+                            @foreach ($post->tags as $tag)
+                                {{$tag->name}}
+                            @endforeach
+                        </td>
                         <td>
                             <a class="btn btn-primary" href="{{route('admin.posts.show', ['post' => $post])}}">Details</a>
                         </td>

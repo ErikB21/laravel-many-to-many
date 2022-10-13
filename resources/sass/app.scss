@@ -18,6 +18,13 @@ body{
     font-family: $font-family-inconsolata;
     nav{
         height: 10vh;
+        .img_logo{
+            width: 40px;
+            height: 40px;
+            img{
+                width: 100%;
+            }
+        }
     }
     
     main{

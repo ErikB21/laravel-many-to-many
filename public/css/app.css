@@ -11012,6 +11012,15 @@ body nav {
   height: 10vh;
 }
 
+body nav .img_logo {
+  width: 40px;
+  height: 40px;
+}
+
+body nav .img_logo img {
+  width: 100%;
+}
+
 body main {
   height: 80vh;
   overflow-y: auto;
