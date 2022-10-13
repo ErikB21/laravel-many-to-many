@@ -49,6 +49,9 @@
                         <li class="nav-item">
                             <a href="{{route('admin.categories.index')}}" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Categories</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{route('admin.tags.index')}}" class="nav-link"><i class="fa-solid fa-tags"></i> Tags</a>
+                        </li>
                         
                     </ul>
 
