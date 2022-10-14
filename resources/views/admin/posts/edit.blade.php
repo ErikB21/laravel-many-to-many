@@ -51,6 +51,9 @@
                 <label for="cover">Image</label>
                 <div class="mb-3 d-flex justify-content-between align-items-center">
                     <input id="cover" type="file" name="image" class="form-control-file @error('image') is-invalid @enderror" alt="">
+                    @error('image')
+                        <div class="d-block invalid-feedback">{{$message}}</div>
+                    @enderror
                     
                     <div class="post_image px-2 d-flex">
                         @if ($post->cover)
@@ -60,10 +63,6 @@
                             <div>No loaded image</div>
                         @endif    
                     </div>
-                    
-                    @error('image')
-                        <div class="invalid-feedback">{{$message}}</div>
-                    @enderror
                 </div>
 
                 <div class="mb-3">

@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::all();//istanzio posts riempendolo con i dati prelevati dal Model Post
         return view('admin.posts.index', compact('posts'));
     }
 
@@ -172,8 +172,11 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        $post->delete();
+        if($post->cover){
+            Storage::delete($post->cover);
+        }
         $post->tags()->sync([]);
+        $post->delete();
         return redirect()->route('admin.posts.index')->with('danger', 'Hai eliminato il post correttamente');
     }
 }
