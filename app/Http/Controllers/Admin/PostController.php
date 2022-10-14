@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Post;
 use App\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class PostController extends Controller
@@ -46,11 +47,20 @@ class PostController extends Controller
             'title' => 'required|min:4|max:255',
             'description' => 'required|max:65535',
             'category_id' => 'nullable|exists:categories,id',
-            'tags' => 'exists:tags,id'
+            'tags' => 'exists:tags,id',
+            'image' => 'nullable|image|max:6000'
+        ],
+        [
+            'image.image' => 'IL formato dell\'immagine non è valido!'
         ]
     );
 
         $data = $request->all();
+
+        $img_path = Storage::put('cover', $data['image']);
+
+        $data['cover'] = $img_path;
+
         $newPost = new Post();
         $newPost->fill($data);
 

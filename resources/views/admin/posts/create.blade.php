@@ -10,7 +10,7 @@
 
     <div class="container-fluid px-0 my_width_form">
         <div class="sec_bg">
-            <form action="{{route('admin.posts.store')}}" method="POST">
+            <form action="{{route('admin.posts.store')}}" method="POST" enctype="multipart/form-data">
 
                 @csrf
 
@@ -30,7 +30,7 @@
                 <label for="tags">Tag</label>
                 <div class="mb-3 d-flex align-items-center justify-content-start flex-wrap">
                     @forelse ($tags as $tag)
-                        <div id="tags" class="form-group form-check pr-2">
+                        <div id="tags" class="form-group @error('tags') is-invalid @enderror form-check pr-2">
                             <input {{(in_array($tag->id, old('tags', [])))?'checked':''}} class="form-check-input" type="checkbox" name="tags[]" id="tag_{{$tag->id}}" value="{{$tag->id}}">
                             <label class="form-check-label" for="tag_{{$tag->id}}">{{$tag->name}}</label>
                         </div>
@@ -38,6 +38,14 @@
                         <div>No Tags Found!</div>
                     @endforelse
                     @error('tags')
+                        <div class="invalid-feedback">{{$message}}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label for="cover">Image</label>
+                    <input id="cover" type="file" name="image" class="form-control-file @error('image') is-invalid @enderror" alt="">
+                    @error('image')
                         <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
