@@ -9,3 +9,12 @@
   width: 320px;
 }
 
+.my_bg_2 .post_image {
+  width: 11.2rem;
+  height: 290px;
+}
+
+.my_bg_2 .post_image img {
+  width: 100%;
+}
+

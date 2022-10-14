@@ -31,6 +31,7 @@
             <thead class="">
                 <tr class="text-primary">
                     <th scope="col">#</th>
+                    <th scope="col">Image</th>
                     <th scope="col">Title</th>
                     <th scope="col">Slug</th>
                     <th scope="col">Category</th>
@@ -42,6 +43,15 @@
                 @forelse ($posts as $post)
                     <tr>
                         <th scope="row">{{$post->id}}</th>
+                        <th>
+                            <div class="p-1 images_index d-flex align-items-center">
+                                @if ($post->cover)
+                                    <img src="{{ asset('storage/' .  $post->cover) }}"/>
+                                @else
+                                    <img src="{{asset('images/b-fire.png')}}" alt="">   
+                                @endif
+                            </div>
+                        </th>
                         <td>{{$post->title}}</td>
                         <td>{{$post->slug}}</td>
                         <td>{{($post->category)?$post->category->name:'null'}}</td>

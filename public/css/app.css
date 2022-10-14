@@ -22,11 +22,23 @@
   width: 60%;
 }
 
+.my_bg .table .images_index {
+  width: 40px;
+  height: 40px;
+}
+
+.my_bg .table .images_index img {
+  width: 100%;
+}
+
 .my_width_form {
   width: 100%;
   background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_23-2149001605.jpg?w=2000");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  overflow-y: auto;
+  padding: 30px 0;
 }
 
 .my_width_form .sec_bg {
@@ -45,13 +57,23 @@
   width: 320px;
 }
 
+.my_bg_2 .post_image {
+  width: 11.2rem;
+  height: 290px;
+}
+
+.my_bg_2 .post_image img {
+  width: 100%;
+}
+
 .my_width_form {
-  width: 100vw;
+  width: 100%;
   background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_23-2149001605.jpg?w=2000");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20px;
-  height: 80vh;
+  padding: 30px 0;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .my_width_form .sec_bg {
