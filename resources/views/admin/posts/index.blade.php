@@ -48,7 +48,7 @@
                                 @if ($post->cover)
                                     <img src="{{ asset('storage/' .  $post->cover) }}"/>
                                 @else
-                                    <img src="{{asset('images/b-fire.png')}}" alt="">   
+                                    <img src="{{asset('images/tree.png')}}" alt="">   
                                 @endif
                             </div>
                         </th>

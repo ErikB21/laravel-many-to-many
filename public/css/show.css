@@ -10,11 +10,10 @@
 }
 
 .my_bg_2 .post_image {
-  width: 11.2rem;
-  height: 290px;
+  width: 290px;
 }
 
 .my_bg_2 .post_image img {
-  width: 100%;
+  width: 100% !important;
 }
 
