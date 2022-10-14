@@ -114,10 +114,25 @@ class PostController extends Controller
                 'title' => 'required|min:4|max:255',
                 'description' => 'required|max:65535',
                 'category_id' => 'nullable|exists:categories,id',
-                'tags' => 'exists:tags,id'
+                'tags' => 'exists:tags,id',
+                'image' => 'nullable|image|max:6000'
+            ],
+            [
+                'image.image' => 'IL formato dell\'immagine non è valido!'
             ]
         );
         $data = $request->all();
+
+        if(array_key_exists('image', $data)){
+
+            if($post->cover){
+                Storage::delete($post->cover);
+            }
+
+
+            $img_path = Storage::put('cover', $data['image']);
+            $data['cover'] = $img_path;
+        }
 
         if($post->title !== $data['title']){
             $data['slug'] = $this->calcSlug($data['title']);

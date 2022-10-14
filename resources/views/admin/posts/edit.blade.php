@@ -10,7 +10,7 @@
 
     <div class="container-fluid px-0 my_width_form">
         <div class="sec_bg">
-            <form action="{{route('admin.posts.update', ['post' => $post])}}" method="POST">
+            <form action="{{route('admin.posts.update', ['post' => $post])}}" method="POST" enctype="multipart/form-data">
 
                 @csrf
                 @method('PUT')
@@ -44,6 +44,24 @@
                         <div>No Tags Found!</div>
                     @endforelse
                     @error('tags')
+                        <div class="invalid-feedback">{{$message}}</div>
+                    @enderror
+                </div>
+
+                <label for="cover">Image</label>
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <input id="cover" type="file" name="image" class="form-control-file @error('image') is-invalid @enderror" alt="">
+                    
+                    <div class="post_image px-2 d-flex">
+                        @if ($post->cover)
+                            <img class="img-fluid" src="{{ asset('storage/' .  $post->cover) }}"/>
+                            <div class="px-2">Immagine corrente</div>
+                        @else
+                            <div>No loaded image</div>
+                        @endif    
+                    </div>
+                    
+                    @error('image')
                         <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                 </div>
