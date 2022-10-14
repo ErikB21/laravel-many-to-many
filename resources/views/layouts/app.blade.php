@@ -28,8 +28,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-            <div class="container">
+        <nav class="py-1 navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex align-items-center justify-content-between">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="img_logo mb-3">
                         <img src="{{'/images/b-fire.png'}}" alt="">
